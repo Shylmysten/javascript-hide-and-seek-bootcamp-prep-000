@@ -12,3 +12,11 @@ function deepestChild() {
   var dc = document.querySelector('#grand-node div div div div');
   return dc;
 }
+
+function increaseRankBy(n) {
+  const lis = document.getElementById('app').querySelectorAll('ul.ranked-list li')
+
+for (let i = 0; i < lis.length; i++) { debugger
+  lis[i].innerHTML = (i + 1).toString(lis[i].innerHTML + 1);
+}
+}
